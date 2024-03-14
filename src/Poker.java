@@ -41,18 +41,13 @@ public class Poker
 
     public static void playerConfig(ArrayList<String> arrayList, Scanner sc)
     {
-       /* Collection<String> player01 = new ArrayList<>();
+        Collection<String> player01 = new ArrayList<>();
         Collection<String> player02 = new ArrayList<>();
         Collection<String> player03 = new ArrayList<>();
         Collection<String> remainCard = new ArrayList<>();
 
-        */
+        
 
-        ArrayList<ArrayList<String>> userNum = User.userNum(3);
-        for (int i = 0; i < userNum.size(); i++)
-        {
-            
-        }
         for (int i = 0; i < arrayList.size()-3; i++)
         {
             player01.add(arrayList.remove(i));
