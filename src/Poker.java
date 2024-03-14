@@ -46,7 +46,11 @@ public class Poker
         Collection<String> player03 = new ArrayList<>();
         Collection<String> remainCard = new ArrayList<>();
 
-        
+        ArrayList<ArrayList<String>> userList = User.userNum(sc.nextInt());
+        for (int i = 0; i < userList.size(); i++)
+        {
+
+        }
 
         for (int i = 0; i < arrayList.size()-3; i++)
         {
