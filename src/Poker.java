@@ -2,16 +2,6 @@ import java.util.*;
 
 public class Poker
 {
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in);
-       Collection<String> card = cardConfig();
-       ArrayList<String> Card = new ArrayList<>(card);
-       Card = cardShuffle(Card);
-       playerConfig(Card,sc);
-
-
-    }
 
     public static Collection<String> cardConfig()
     {

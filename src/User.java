@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class User
 {
@@ -37,5 +34,14 @@ public class User
         }
         user.put("底牌: ",remainCard );
         return user;
+    }
+
+    public static Set<Map.Entry<String, List<String>>> convertToSet(Map<String,List<String>> config)
+    {
+        Set<Map.Entry<String, List<String>>> set = config.entrySet();
+        for (int i = 0; i < set.size(); i++) {
+            System.out.println(config);
+        }
+        return  set;
     }
 }
