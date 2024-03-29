@@ -39,46 +39,5 @@ public class Poker
          return arrayList;
     }
 
-    public static void playerConfig(ArrayList<String> arrayList, Scanner sc)
-    {
-        Collection<String> player01 = new ArrayList<>();
-        Collection<String> player02 = new ArrayList<>();
-        Collection<String> player03 = new ArrayList<>();
-        Collection<String> remainCard = new ArrayList<>();
 
-        ArrayList<ArrayList<String>> userList = User.userNum(sc.nextInt());
-        for (int i = 0; i < userList.size(); i++)
-        {
-
-        }
-
-        for (int i = 0; i < arrayList.size()-3; i++)
-        {
-            player01.add(arrayList.remove(i));
-            player02.add(arrayList.remove(i));
-            player03.add(arrayList.remove(i));
-        }
-
-       // remainCard = arrayList;
-
-        for (int i = arrayList.size()-3; i < arrayList.size(); i++)
-        {
-           remainCard.add(arrayList.get(i));
-
-        }
-
-        System.out.println("是否选择明牌： Yes/No");
-        String mode = sc.nextLine();
-        if (mode.equals("Yes"))
-        {
-            System.out.println("玩家1: " + player01);
-            System.out.println("玩家2: " + player02);
-            System.out.println("玩家3: " + player03);
-            System.out.println("底牌: " + remainCard);
-        }
-        else
-        {
-            System.out.println("游戏即将开始");
-        }
-    }
 }
