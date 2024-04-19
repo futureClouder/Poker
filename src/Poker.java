@@ -1,11 +1,11 @@
 import java.util.*;
-
+//配置54张扑克牌
 public class Poker
 {
 
-    public static Collection<String> cardConfig()
+    public static ArrayList<String> cardConfig()
     {
-        Collection<String> configure = new ArrayList<>();
+        ArrayList<String> configure = new ArrayList<>();
         String[] color = {"黑桃","红桃","梅花", "方片"};
         String [] number = {"2","A","K","Q","J","10","9","8","7","6","5","4","3"};
 
@@ -23,6 +23,7 @@ public class Poker
         return configure;
     }
 
+//洗牌
     public static ArrayList<String> cardShuffle(ArrayList<String> arrayList)
     {
          Collections.shuffle(arrayList);
